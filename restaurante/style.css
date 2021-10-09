@@ -1,0 +1,118 @@
+/* letra */
+* {
+  font-family: "Raleway", sans-serif;
+}
+h1,
+h2 {
+  font-weight: 900;
+}
+/*cajas que van en la izq y der*/
+.contenedor {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.derecha {
+  margin-right: 0px !important;
+}
+
+.izquierda {
+  margin-left: 0px !important;
+}
+/*background*/
+body {
+  background-image: url(imagenes/cool-background.png);
+  background-size: cover;
+}
+/* HEADER */
+.menu {
+  display: grid;
+  margin: 0px;
+  padding: 0px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.menu__opcion {
+  font-weight: 900;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  list-style-type: none;
+  background-color: #ffc600;
+}
+
+/* PORTADA  */
+.portada {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-columns: 1fr 1fr 0.5fr;
+  grid-template-areas:
+    "a a b"
+    "a a c";
+}
+/* PORTADA IMAGEN*/
+.portada__img {
+  box-sizing: content-box;
+  grid-area: a;
+
+  /* para las letras */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+  /* para el fondo     */
+  background: url(/imagenes/taco.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  min-height: 500px;
+}
+
+.portada__opc {
+  background-color: #ffc600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.p-o__opc1 {
+  grid-area: b;
+  margin: 0px 0px 20px 20px;
+}
+.p-o__opc2 {
+  grid-area: c;
+  margin-left: 20px;
+}
+
+/* GRID MENU */
+.grid_menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.grid_menu__opc {
+  background-color: white;
+  text-align: center;
+  padding: 30px;
+  margin: 20px;
+}
+
+/*IMAGEN TACO*/
+.img_taco {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.img_taco__opc {
+  padding: 40px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.img_taco__btn {
+  width: 100px;
+  background-color: #ffc600;
+}
